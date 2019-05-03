@@ -23,6 +23,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
         initComponents();
         this.setSize(416, 535);
+        this.setTitle("Calculadora - Carlos Condor");
     }
 
     /**
@@ -69,10 +70,11 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         setBackground(new java.awt.Color(51, 51, 51));
         getContentPane().setLayout(null);
 
-        jPanel1.setBackground(new java.awt.Color(0, 255, 0));
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Calculadora", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 0, 11), new java.awt.Color(0, 0, 204))); // NOI18N
+        jPanel1.setBackground(new java.awt.Color(0, 51, 102));
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Calculadora", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 0, 11), new java.awt.Color(51, 255, 255))); // NOI18N
 
         jPanel2.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 0, 0), 3));
 
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Dato 1");
@@ -84,7 +86,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
         lblDato2.setForeground(new java.awt.Color(255, 255, 255));
 
-        lblResultado.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        lblResultado.setFont(new java.awt.Font("MingLiU_HKSCS-ExtB", 0, 24)); // NOI18N
         lblResultado.setForeground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -119,7 +121,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        btnDividir.setBackground(new java.awt.Color(153, 153, 153));
+        btnDividir.setBackground(new java.awt.Color(102, 102, 255));
         btnDividir.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btnDividir.setText("/");
         btnDividir.addActionListener(new java.awt.event.ActionListener() {
@@ -128,7 +130,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        btnDelete.setBackground(new java.awt.Color(153, 153, 153));
+        btnDelete.setBackground(new java.awt.Color(102, 102, 255));
         btnDelete.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btnDelete.setText("<---");
         btnDelete.addActionListener(new java.awt.event.ActionListener() {
@@ -137,7 +139,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        btnC.setBackground(new java.awt.Color(153, 153, 153));
+        btnC.setBackground(new java.awt.Color(102, 102, 255));
         btnC.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btnC.setText("C");
         btnC.addActionListener(new java.awt.event.ActionListener() {
@@ -146,7 +148,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        btnMultiplicar.setBackground(new java.awt.Color(153, 153, 153));
+        btnMultiplicar.setBackground(new java.awt.Color(102, 102, 255));
         btnMultiplicar.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btnMultiplicar.setText("*");
         btnMultiplicar.addActionListener(new java.awt.event.ActionListener() {
@@ -155,7 +157,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        btnRestar.setBackground(new java.awt.Color(153, 153, 153));
+        btnRestar.setBackground(new java.awt.Color(102, 102, 255));
         btnRestar.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btnRestar.setText("-");
         btnRestar.addActionListener(new java.awt.event.ActionListener() {
@@ -164,7 +166,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        btnSumar.setBackground(new java.awt.Color(153, 153, 153));
+        btnSumar.setBackground(new java.awt.Color(102, 102, 255));
         btnSumar.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btnSumar.setText("+");
         btnSumar.addActionListener(new java.awt.event.ActionListener() {
@@ -173,7 +175,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        btn3.setBackground(new java.awt.Color(153, 153, 153));
+        btn3.setBackground(new java.awt.Color(0, 102, 0));
         btn3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btn3.setText("3");
         btn3.addActionListener(new java.awt.event.ActionListener() {
@@ -182,7 +184,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        btn2.setBackground(new java.awt.Color(153, 153, 153));
+        btn2.setBackground(new java.awt.Color(0, 102, 0));
         btn2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btn2.setText("2");
         btn2.addActionListener(new java.awt.event.ActionListener() {
@@ -191,7 +193,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        btn1.setBackground(new java.awt.Color(153, 153, 153));
+        btn1.setBackground(new java.awt.Color(0, 102, 0));
         btn1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btn1.setText("1");
         btn1.addActionListener(new java.awt.event.ActionListener() {
@@ -200,7 +202,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        btnCE.setBackground(new java.awt.Color(153, 153, 153));
+        btnCE.setBackground(new java.awt.Color(102, 102, 255));
         btnCE.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btnCE.setText("CE");
         btnCE.addActionListener(new java.awt.event.ActionListener() {
@@ -209,7 +211,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        btn7.setBackground(new java.awt.Color(153, 153, 153));
+        btn7.setBackground(new java.awt.Color(0, 102, 0));
         btn7.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btn7.setText("7");
         btn7.addActionListener(new java.awt.event.ActionListener() {
@@ -218,7 +220,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        btn4.setBackground(new java.awt.Color(153, 153, 153));
+        btn4.setBackground(new java.awt.Color(0, 102, 0));
         btn4.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btn4.setText("4");
         btn4.addActionListener(new java.awt.event.ActionListener() {
@@ -227,7 +229,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        btnMasMenos.setBackground(new java.awt.Color(153, 153, 153));
+        btnMasMenos.setBackground(new java.awt.Color(102, 102, 255));
         btnMasMenos.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btnMasMenos.setText("+ -");
         btnMasMenos.addActionListener(new java.awt.event.ActionListener() {
@@ -236,7 +238,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        btn8.setBackground(new java.awt.Color(153, 153, 153));
+        btn8.setBackground(new java.awt.Color(0, 102, 0));
         btn8.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btn8.setText("8");
         btn8.addActionListener(new java.awt.event.ActionListener() {
@@ -245,7 +247,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        btn5.setBackground(new java.awt.Color(153, 153, 153));
+        btn5.setBackground(new java.awt.Color(0, 102, 0));
         btn5.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btn5.setText("5");
         btn5.addActionListener(new java.awt.event.ActionListener() {
@@ -254,11 +256,16 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        btn0.setBackground(new java.awt.Color(153, 153, 153));
+        btn0.setBackground(new java.awt.Color(0, 102, 0));
         btn0.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btn0.setText("0");
+        btn0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn0ActionPerformed(evt);
+            }
+        });
 
-        btn9.setBackground(new java.awt.Color(153, 153, 153));
+        btn9.setBackground(new java.awt.Color(0, 102, 0));
         btn9.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btn9.setText("9");
         btn9.addActionListener(new java.awt.event.ActionListener() {
@@ -267,7 +274,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        btn6.setBackground(new java.awt.Color(153, 153, 153));
+        btn6.setBackground(new java.awt.Color(0, 102, 0));
         btn6.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btn6.setText("6");
         btn6.addActionListener(new java.awt.event.ActionListener() {
@@ -276,7 +283,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        btnPunto.setBackground(new java.awt.Color(153, 153, 153));
+        btnPunto.setBackground(new java.awt.Color(0, 102, 0));
         btnPunto.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btnPunto.setText(".");
         btnPunto.addActionListener(new java.awt.event.ActionListener() {
@@ -285,7 +292,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        btnIgual.setBackground(new java.awt.Color(153, 153, 153));
+        btnIgual.setBackground(new java.awt.Color(102, 102, 255));
         btnIgual.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btnIgual.setText("=");
         btnIgual.addActionListener(new java.awt.event.ActionListener() {
@@ -294,7 +301,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setBackground(new java.awt.Color(153, 153, 153));
+        jButton1.setBackground(new java.awt.Color(102, 102, 255));
         jButton1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jButton1.setText("%");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -303,7 +310,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(153, 153, 153));
+        jButton2.setBackground(new java.awt.Color(102, 102, 255));
         jButton2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jButton2.setText("√");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -312,7 +319,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setBackground(new java.awt.Color(153, 153, 153));
+        jButton3.setBackground(new java.awt.Color(102, 102, 255));
         jButton3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jButton3.setText("1/X");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -422,7 +429,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                             .addComponent(btnPunto, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnSumar, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(btnIgual, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(12, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel1);
@@ -432,50 +439,53 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnIgualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIgualActionPerformed
+        //Switch para saber que operacion debe realizar
         switch (operacion) {
             case 1:
+                //En caso de que sea suma se obtiene los resultados 
                 n2 = Double.parseDouble(lblResultado.getText());
                 lblDato2.setText(String.valueOf(n2));
                 double resultadoSuma = n2 + n1;
+                //Se setea el resultado en el label de resultado
                 lblResultado.setText(String.valueOf(resultadoSuma));
                 break;
             case 2:
+                //En caso de que sea resta se obtiene los resultados 
                 n2 = Double.parseDouble(lblResultado.getText());
                 lblDato2.setText(String.valueOf(n2));
                 double resultadoResta = n1 - n2;
+                //Se setea el resultado en el label de resultado
                 lblResultado.setText(String.valueOf(resultadoResta));
                 break;
             case 3:
+                //En caso de que sea multiplicacion se obtiene los resultados 
                 n2 = Double.parseDouble(lblResultado.getText());
                 lblDato2.setText(String.valueOf(n2));
                 double resultadoMulti = n1 * n2;
+                //Se setea el resultado en el label de resultado
                 lblResultado.setText(String.valueOf(resultadoMulti));
                 break;
             case 4:
+                //En caso de que sea division se obtiene los resultados 
                 n2 = Double.parseDouble(lblResultado.getText());
                 lblDato2.setText(String.valueOf(n2));
                 double resultadoDivi = n1 / n2;
+                //Se setea el resultado en el label de resultado
                 lblResultado.setText(String.valueOf(resultadoDivi));
                 break;
             case 5:
+                //En caso de que sea porcentaje se obtiene los resultados 
                 n2 = Double.parseDouble(lblResultado.getText());
                 lblDato2.setText(String.valueOf(n2));
                 double resultadoPorcen = (n1 * n2) / 100;
+                //Se setea el resultado en el label de resultado
                 lblResultado.setText(String.valueOf(resultadoPorcen));
-                break;
-            case 6:
-                n2 = Double.parseDouble(lblResultado.getText());
-                lblDato2.setText(String.valueOf(n2));
-                double resultadoRaiz = Math.pow(n1, n2);
-                lblResultado.setText(String.valueOf(resultadoRaiz));
-                break;
-            default:
-
                 break;
         }
     }//GEN-LAST:event_btnIgualActionPerformed
 
     private void btnPuntoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPuntoActionPerformed
+        //Controlador que no deja agregar mas de un punto
         punto++;
         if (punto == 1) {
             lblResultado.setText(lblResultado.getText() + ".");
@@ -483,34 +493,42 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_btnPuntoActionPerformed
 
     private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn6ActionPerformed
+        //Se agrega el numero 6 al numero para operar
         lblResultado.setText(lblResultado.getText() + "6");
     }//GEN-LAST:event_btn6ActionPerformed
 
     private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn9ActionPerformed
+        //Se agrega el numero 9 al numero para operar
         lblResultado.setText(lblResultado.getText() + "9");
     }//GEN-LAST:event_btn9ActionPerformed
 
     private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
+        //Se agrega el numero 5 al numero para operar
         lblResultado.setText(lblResultado.getText() + "5");
     }//GEN-LAST:event_btn5ActionPerformed
 
     private void btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn8ActionPerformed
+        //Se agrega el numero 8 al numero para operar
         lblResultado.setText(lblResultado.getText() + "8");
     }//GEN-LAST:event_btn8ActionPerformed
 
     private void btnMasMenosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMasMenosActionPerformed
+        // Se cambia el valor a negativo a positivo
         lblResultado.setText(String.valueOf(Double.parseDouble(lblResultado.getText()) * -1));
     }//GEN-LAST:event_btnMasMenosActionPerformed
 
     private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4ActionPerformed
+        //Se agrega el numero 4 al numero para operar
         lblResultado.setText(lblResultado.getText() + "4");
     }//GEN-LAST:event_btn4ActionPerformed
 
     private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn7ActionPerformed
+        //Se agrega el numero 7 al numero para operar
         lblResultado.setText(lblResultado.getText() + "7");
     }//GEN-LAST:event_btn7ActionPerformed
 
     private void btnCEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCEActionPerformed
+        //Reseta todos los valores
         lblResultado.setText("");
         lblDato2.setText("");
         lblDato1.setText("");
@@ -519,18 +537,22 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCEActionPerformed
 
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
+        //Se agrega el numero 1 al numero para operar
         lblResultado.setText(lblResultado.getText() + "1");
     }//GEN-LAST:event_btn1ActionPerformed
 
     private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
+        //Se agrega el numero 2 al numero para operar
         lblResultado.setText(lblResultado.getText() + "2");
     }//GEN-LAST:event_btn2ActionPerformed
 
     private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
+        //Se agrega el numero 3 al numero para operar
         lblResultado.setText(lblResultado.getText() + "3");
     }//GEN-LAST:event_btn3ActionPerformed
 
     private void btnSumarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumarActionPerformed
+        //Primer if sirve para saber si ya existe el segundo valor
         if (n2 > 0) {
             n1 = Double.parseDouble(lblResultado.getText());
             n2 = 0;
@@ -539,19 +561,23 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             lblResultado.setText("");
             operacion = 1;
         } else {
+            //Si no existe el segundo valor pasa a tomar el primero
             if (n1 > 0) {
 
             } else {
+                //Toma el primer valor y define la operacion con el valor 1 que es suma
                 n1 = Double.parseDouble(lblResultado.getText());
                 lblDato1.setText(String.valueOf(n1));
                 lblResultado.setText("");
                 operacion = 1;
             }
         }
+        //Reinicio del punto
         punto = 0;
     }//GEN-LAST:event_btnSumarActionPerformed
 
     private void btnRestarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestarActionPerformed
+        //Primer if sirve para saber si ya existe el segundo valor 
         if (n2 > 0) {
             n1 = Double.parseDouble(lblResultado.getText());
             n2 = 0;
@@ -560,18 +586,23 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             lblResultado.setText("");
             operacion = 2;
         } else {
+            //Si no existe el segundo valor pasa a tomar el primero
             if (n1 > 0) {
 
             } else {
+                //Toma el primer valor y define la operacion con el valor 1 que es suma
                 n1 = Double.parseDouble(lblResultado.getText());
                 lblDato1.setText(String.valueOf(n1));
                 lblResultado.setText("");
                 operacion = 2;
             }
         }
+        //Reinicio del punto
+        punto = 0;
     }//GEN-LAST:event_btnRestarActionPerformed
 
     private void btnMultiplicarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMultiplicarActionPerformed
+        //Primer if sirve para saber si ya existe el segundo valor
         if (n2 > 0) {
             n1 = Double.parseDouble(lblResultado.getText());
             n2 = 0;
@@ -580,22 +611,28 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             lblResultado.setText("");
             operacion = 3;
         } else {
+            //Si no existe el segundo valor pasa a tomar el primero
             if (n1 > 0) {
 
             } else {
+                //Toma el primer valor y define la operacion con el valor 1 que es suma
                 n1 = Double.parseDouble(lblResultado.getText());
                 lblDato1.setText(String.valueOf(n1));
                 lblResultado.setText("");
                 operacion = 3;
             }
         }
+        //Reinicio del punto
+        punto = 0;
     }//GEN-LAST:event_btnMultiplicarActionPerformed
 
     private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
+        //Elimina el ultimo digito de los valores de entrada
         lblResultado.setText(lblResultado.getText().substring(0, lblResultado.getText().length() - 1));
     }//GEN-LAST:event_btnDeleteActionPerformed
 
     private void btnDividirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDividirActionPerformed
+        //Primer if sirve para saber si ya existe el segundo valor
         if (n2 > 0) {
             n1 = Double.parseDouble(lblResultado.getText());
             n2 = 0;
@@ -604,43 +641,44 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             lblResultado.setText("");
             operacion = 4;
         } else {
+            //Si no existe el segundo valor pasa a tomar el primero
             if (n1 > 0) {
 
             } else {
+                //Toma el primer valor y define la operacion con el valor 1 que es suma
                 n1 = Double.parseDouble(lblResultado.getText());
                 lblDato1.setText(String.valueOf(n1));
                 lblResultado.setText("");
                 operacion = 4;
             }
         }
+        //Reinicio del punto
+        punto = 0;
     }//GEN-LAST:event_btnDividirActionPerformed
 
     private void btnCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCActionPerformed
-        
+        //Elimina el ultimo digito de los valores de entrada
         lblResultado.setText(lblResultado.getText().substring(0, lblResultado.getText().length() - 1));
     }//GEN-LAST:event_btnCActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        if (n2 > 0) {
-            n1 = Double.parseDouble(lblResultado.getText());
-            n2 = 0;
-            lblDato1.setText(String.valueOf(n1));
-            lblDato2.setText("");
-            lblResultado.setText("");
-            operacion = 6;
-        } else {
-            if (n1 > 0) {
+        //Si no existe el segundo valor pasa a tomar el primero
+        if (n1 > 0) {
 
-            } else {
-                n1 = Double.parseDouble(lblResultado.getText());
-                lblDato1.setText(String.valueOf(n1));
-                lblResultado.setText("");
-                operacion = 6;
-            }
+        } else {
+            //Toma el primer valor y define la operacion con el valor 1 que es suma
+            n1 = Double.parseDouble(lblResultado.getText());
+            lblDato1.setText(String.valueOf(n1));
+            lblResultado.setText("");
+            double resultadoRaiz = Math.sqrt(n1);
+            lblResultado.setText(String.valueOf(resultadoRaiz));
         }
+        //Reinicio del punto
+        punto = 0;
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        //Primer if sirve para saber si ya existe el segundo valor
         if (n2 > 0) {
             n1 = Double.parseDouble(lblResultado.getText());
             n2 = 0;
@@ -649,21 +687,29 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             lblResultado.setText("");
             operacion = 5;
         } else {
+            //Si no existe el segundo valor pasa a tomar el primero
             if (n1 > 0) {
 
             } else {
+                //Toma el primer valor y define la operacion con el valor 1 que es suma
                 n1 = Double.parseDouble(lblResultado.getText());
                 lblDato1.setText(String.valueOf(n1));
                 lblResultado.setText("");
                 operacion = 5;
             }
         }
+        //Reinicio del punto
+        punto = 0;
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        lblDato1.setText("1/"+lblResultado.getText());
-        lblResultado.setText(String.valueOf(1/Double.parseDouble(lblResultado.getText())));
+        lblDato1.setText("1/" + lblResultado.getText());
+        lblResultado.setText(String.valueOf(1 / Double.parseDouble(lblResultado.getText())));
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void btn0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn0ActionPerformed
+        lblResultado.setText(lblResultado.getText() + "0");
+    }//GEN-LAST:event_btn0ActionPerformed
 
     /**
      * @param args the command line arguments
