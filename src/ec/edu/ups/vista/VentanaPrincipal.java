@@ -11,7 +11,6 @@ package ec.edu.ups.vista;
  */
 public class VentanaPrincipal extends javax.swing.JFrame {
 
-    private int punto = 0;
     private double n1 = 0;
     private double n2 = 0;
     private int operacion = 0;
@@ -364,10 +363,11 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addComponent(btn0, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addGap(6, 6, 6)))
-                                .addGap(12, 12, 12)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(btnPunto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(btn3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGap(12, 12, 12)
+                                        .addComponent(btn3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addComponent(btnPunto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -486,8 +486,8 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
     private void btnPuntoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPuntoActionPerformed
         //Controlador que no deja agregar mas de un punto
-        punto++;
-        if (punto == 1) {
+        
+        if (lblResultado.getText().indexOf(".")==-1) {
             lblResultado.setText(lblResultado.getText() + ".");
         }
     }//GEN-LAST:event_btnPuntoActionPerformed
@@ -572,8 +572,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 operacion = 1;
             }
         }
-        //Reinicio del punto
-        punto = 0;
     }//GEN-LAST:event_btnSumarActionPerformed
 
     private void btnRestarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestarActionPerformed
@@ -597,8 +595,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 operacion = 2;
             }
         }
-        //Reinicio del punto
-        punto = 0;
+        
     }//GEN-LAST:event_btnRestarActionPerformed
 
     private void btnMultiplicarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMultiplicarActionPerformed
@@ -622,8 +619,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 operacion = 3;
             }
         }
-        //Reinicio del punto
-        punto = 0;
+
     }//GEN-LAST:event_btnMultiplicarActionPerformed
 
     private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
@@ -652,8 +648,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 operacion = 4;
             }
         }
-        //Reinicio del punto
-        punto = 0;
+
     }//GEN-LAST:event_btnDividirActionPerformed
 
     private void btnCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCActionPerformed
@@ -673,8 +668,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             double resultadoRaiz = Math.sqrt(n1);
             lblResultado.setText(String.valueOf(resultadoRaiz));
         }
-        //Reinicio del punto
-        punto = 0;
+
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -698,8 +692,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 operacion = 5;
             }
         }
-        //Reinicio del punto
-        punto = 0;
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
